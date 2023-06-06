@@ -5,7 +5,7 @@ import type { RootState } from "../../index";
 interface movieState {
   movieList: any[];
   characterList: any[];
-  character: {};
+  character: any;
 }
 
 const initialState: movieState = {

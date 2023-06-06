@@ -17,7 +17,7 @@ function CharacterCard(props: CharacterCardProps) {
         <img alt={props.name} src={props.img} width={150} />
       </div>
       <div className=''>
-        <Link to={`character/${props.mal_id}`} className='py-1 px-3 bg-blue-500 rounded-md'>Detalles</Link>
+        <Link to={`/characters/${props.mal_id}/full`} className='py-1 px-3 bg-blue-500 rounded-md'>Detalles</Link>
       </div>
     </div>
   );

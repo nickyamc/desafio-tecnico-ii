@@ -12,7 +12,8 @@ const apiGetCharacters = async (mal_id: number) => {
 
 const apiGetCharacter = async (character_mal_id: number) => {
   const response = await axios.get(`/characters/${character_mal_id}/full`);
-  return response.data;
+  console.log(response.data.data)
+  return response.data.data;
 };
 
 export {

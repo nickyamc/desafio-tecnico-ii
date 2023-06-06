@@ -7,6 +7,7 @@ import Main from './routers/Main';
 import { store } from './store';
 import ListMovies from './components/containers/ListMovies';
 import ListCharacters from './components/containers/ListCharacters';
+import DetailCharacter from './components/DetailCharacter';
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
       {
         path: "characters/:mal_id",
         element: <ListCharacters />,
+      },
+      {
+        path: "characters/:character_mal_id/full",
+        element: <DetailCharacter />,
       },
     ],
   },
